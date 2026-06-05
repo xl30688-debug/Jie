@@ -1,0 +1,172 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>我的摄影作品集</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Arial, sans-serif;
+    background:#111;
+    color:white;
+}
+
+header{
+    background:black;
+    padding:20px 50px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    position:sticky;
+    top:0;
+}
+
+.logo{
+    font-size:24px;
+    font-weight:bold;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin-left:20px;
+}
+
+.hero{
+    height:90vh;
+    background:url("https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?w=1600") center/cover;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+}
+
+.hero-content{
+    background:rgba(0,0,0,0.5);
+    padding:30px;
+    border-radius:10px;
+}
+
+.hero h1{
+    font-size:50px;
+}
+
+.hero p{
+    margin-top:10px;
+    font-size:20px;
+}
+
+.gallery{
+    padding:60px 40px;
+}
+
+.gallery h2{
+    text-align:center;
+    margin-bottom:30px;
+}
+
+.grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:20px;
+}
+
+.grid img{
+    width:100%;
+    height:300px;
+    object-fit:cover;
+    border-radius:10px;
+    transition:0.3s;
+}
+
+.grid img:hover{
+    transform:scale(1.05);
+}
+
+.about{
+    padding:60px 40px;
+    text-align:center;
+    background:#1a1a1a;
+}
+
+.contact{
+    padding:60px 40px;
+    text-align:center;
+}
+
+footer{
+    text-align:center;
+    padding:20px;
+    background:black;
+}
+</style>
+
+</head>
+<body>
+
+<header>
+    <div class="logo">Photography</div>
+
+    <nav>
+        作品
+        关于
+        联系
+    </nav>
+</header>
+
+<section class="hero">
+    <div class="hero-content">
+        <h1>捕捉每一个精彩瞬间</h1>
+        <p>个人摄影作品展示网站</p >
+    </div>
+</section>
+
+<section id="gallery" class="gallery">
+    <h2>摄影作品</h2>
+
+    <div class="grid">
+
+        < img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800" alt="摄影作品">
+
+        < img src="https://images.unsplash.com/photo-1511379938547-c1f69419868d?w=800" alt="摄影作品">
+
+        < img src="https://images.unsplash.com/photo-1492684223066-81342ee5ff30?w=800" alt="摄影作品">
+
+        < img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?w=800" alt="摄影作品">
+
+        < img src="https://images.unsplash.com/photo-1516035069371-29a1b244cc32?w=800" alt="摄影作品">
+
+        < img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=800" alt="摄影作品">
+
+    </div>
+</section>
+
+<section id="about" class="about">
+    <h2>关于我</h2>
+    <br>
+    <p>
+        你好，我是一名摄影爱好者，
+        喜欢记录风景、人文和生活中的美好瞬间。
+    </p >
+</section>
+
+<section id="contact" class="contact">
+    <h2>联系方式</h2>
+    <br>
+    <p>Email：yourname@email.com</p >
+    <p>Instagram：@yourname</p >
+</section>
+
+<footer>
+    <p>© 2025 My Photography Portfolio</p >
+</footer>
+
+</body>
+</html>
